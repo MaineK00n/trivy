@@ -31,7 +31,7 @@ jobs:
           
       - name: Check PR and all workflows status
         if: steps.pr-context.outputs.skip != 'true'
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@450193c5abd4cdb17ba9f3ffcfe8f635c4bb6c2a # v7.0.1
         with:
           script: |
             const prNumber = ${{ steps.pr-context.outputs.number }};
